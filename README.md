@@ -56,8 +56,9 @@
 
 | Controller                                        | Description                                                  |
 | ------------------------------------------------- | ------------------------------------------------------------ |
-| https://github.com/mittwald/kubernetes-replicator | controller for synchronizing secrets & config maps across namespaces |
-
+| [kubernetes-replicator](https://github.com/mittwald/kubernetes-replicator) | controller for synchronizing secrets & config maps across namespaces |
+| [registry-creds](https://github.com/upmc-enterprises/registry-creds) | Allow for AWS ECR and Google Registry credentials to be refreshed inside your Kubernetes cluster via ImagePullSecrets |
+| [namespace-configuration-controller](https://github.com/raffaelespazzoli/namespace-configuration-controller) | keeps a namespace's configuration aligned with one of more policies specified as a CRD |
 
 
 
