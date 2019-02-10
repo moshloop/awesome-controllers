@@ -1,3 +1,10 @@
+
+## Operators vs Controllers
+
+An operator is a specifc type of controller that provides a higher level of abstraction for deploying complex resources using custom resource definitions (CRD's). While a controller normally extends or configures existing resources, an operator deploys the resources themeselves.
+
+See [awesome-operators](https://github.com/operator-framework/awesome-operators).
+
 ### Autoscaling / Scheduling
 
 | Controller                                                   | Description                                                  |
@@ -27,8 +34,13 @@
 
 ### Networking
 
+*Controllers that expose networking related functions likeload balancers / DNS outside the scope of CNI.*.
+*See [cni#3rd-party-plugins](https://github.com/containernetworking/cni#3rd-party-plugins) for a list of CNI plugins, some of which do provide similar functionality*
+
 | Controller                                                   | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [external-dns](https://github.com/kubernetes-incubator/external-dns) | configure external DNS (Route53, CloudDNS, etc) for ingresses and services |
+| [google/metalb](https://github.com/google/metallb)           | load balancer implemented using ARP or BGP                   |
 | [sapcc/kube-parrot](https://github.com/sapcc/kube-parrot)    | dynamically announces routes with BGP                        |
 | [pickledrick/vpc-peering-operator](https://github.com/pickledrick/vpc-peering-operator) | manage the lifecycle of AWS VPC Peering Connections          |
 | [wikiwi/kube-dns-sync](https://github.com/wikiwi/kube-dns-sync) | syncs Node IPs to a DNS service                              |
