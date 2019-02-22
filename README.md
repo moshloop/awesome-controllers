@@ -1,4 +1,5 @@
 
+
 ## Operators vs Controllers
 
 An operator is a specifc type of controller that provides a higher level of abstraction for deploying complex resources using custom resource definitions (CRD's). While a controller normally extends or configures existing resources, an operator deploys the resources themeselves.
@@ -29,6 +30,7 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 | [target/pod-reaper](https://github.com/target/pod-reaper)    | delete pods based on matching conditions                     |
 | [lachie83/pod-requeue](https://github.com/lachie83/pod-requeue) | recreate failed pods stuck in InsufficientFreeCPU or OutOfcpu states |
 | [gardener-attic/auto-node-repair](https://github.com/gardener-attic/auto-node-repair) |                                                              |
+| [stakater/Jamadar](https://github.com/stakater/Jamadar)      | cleans up resources after a predefined timeout               |
 
 
 
@@ -87,6 +89,7 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 | [namespace-configuration-controller](https://github.com/raffaelespazzoli/namespace-configuration-controller) | keeps a namespace's configuration aligned with one of more policies specified as a CRD |
 | [cruise-automation/rbacsync](https://github.com/cruise-automation/rbacsync) |                                                              |
 | [tumblr / k8s-config-projector](https://github.com/tumblr/k8s-config-projector) | Create Kubernetes ConfigMaps from configuration files        |
+| [stakater/ProxyInjector](https://github.com/stakater/ProxyInjector) | inject an authentication proxy container to relevant pods    |
 
 
 
@@ -114,6 +117,8 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [hxquangnhat/*kubernetes*-auto-ingress](https://github.com/hxquangnhat/kubernetes-auto-ingress) | Dynamically create an ingress for an associated service for *Kubernetes*, works with nginx ingress *controller* |
 | [torchbox/k8s-ts-ingress](https://github.com/torchbox/k8s-ts-ingress) | *Kubernetes* Ingress *controller* as a Traffic Server plugin |
+| [stakater/Xposer](https://github.com/stakater/Xposer)        | watch for services and dynamically create an Ingress with a TLS certificate |
+| [stakater/IngressMonitorController](https://github.com/stakater/IngressMonitorController) | monitor ingresses and create alerts on Pingdom, UptimeRobot and StatusCake |
 | [bretagne-peiqi/lvs-nginx-controller](https://github.com/bretagne-peiqi/lvs-nginx-controller) |                                                              |
 | [citrix/citrix-k8s-ingress-controller](https://github.com/citrix/citrix-k8s-ingress-controller) |                                                              |
 |                                                              |                                                              |
@@ -124,6 +129,7 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 | [philips/backplane-kubernetes-ingress](https://github.com/philips/backplane-kubernetes-ingress) |                                                              |
 | [mercari/certificate-expiry-monitor-controller](https://github.com/mercari/certificate-expiry-monitor-controller) |                                                              |
 | [nilebox/kanarini](https://github.com/nilebox/kanarini)      |                                                              |
+| [webrelay/ingress](https://github.com/webrelay/ingress)      | Map tunnels to ingress for [webhookrelay.com](webhookrelay.com) |
 
 
 
