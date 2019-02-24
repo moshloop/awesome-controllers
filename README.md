@@ -16,6 +16,9 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 | [hex108/cron-hpa-controller](https://github.com/hex108/cron-hpa-controller) |                                                              |
 | [estafette/estafette-gke-preemptible-killer](https://github.com/estafette/estafette-gke-preemptible-killer) | ensures deletion of preemptible nodes in a GKE cluster is spread out to avoid the risk of all getting deleted at the same time after 24 hour |
 | [atlassian/escalator](https://github.com/atlassian/escalator) | batch or job optimized horizontal autoscaler                 |
+| [deislabs/osiris](https://github.com/deislabs/osiris)        | Scale to zero component                                      |
+| [kubernetes-incubator/descheduler](https://github.com/kubernetes-incubator/descheduler) |                                                              |
+| [open-policy-agent/opa-kube-scheduler](https://github.com/open-policy-agent/opa-kube-scheduler) | A policy-enabled scheduler                                   |
 
 
 
@@ -120,10 +123,13 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 | Controller                                                   | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [hxquangnhat/kubernetes-auto-ingress](https://github.com/hxquangnhat/kubernetes-auto-ingress) | Dynamically create an ingress for an associated service      |
+| [jenkins-x/exposecontroller](https://github.com/jenkins-x/exposecontroller) | Automatically expose services creating ingress rules, openshift routes or modifying services to use kubernetes nodePort or loadBalancer service types |
 | [torchbox/k8s-ts-ingress](https://github.com/torchbox/k8s-ts-ingress) | Traffic Server ingress controller                            |
 | [stakater/Xposer](https://github.com/stakater/Xposer)        | watch for services and dynamically create an Ingress with a TLS certificate |
 | [stakater/IngressMonitorController](https://github.com/stakater/IngressMonitorController) | monitor ingresses and create alerts on Pingdom, UptimeRobot and StatusCake |
 | [uswitch/yggdrasil](https://github.com/uswitch/yggdrasil)    | Envoy control plane for multi-cluster ingress                |
+| [zalando-incubator/stackset-controller](https://github.com/zalando-incubator/stackset-controller) | application life cycle controller and traffic switching      |
+| [stefanprodan/flagger](https://github.com/stefanprodan/flagger) | Istio progressive delivery Kubernetes operator               |
 | [bretagne-peiqi/lvs-nginx-controller](https://github.com/bretagne-peiqi/lvs-nginx-controller) |                                                              |
 | [citrix/citrix-k8s-ingress-controller](https://github.com/citrix/citrix-k8s-ingress-controller) |                                                              |
 |                                                              |                                                              |
@@ -141,19 +147,25 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 
 *Controllers that take action such as restarting a pod or deployment when watched resource such as configmaps and secrets change.*
 
-| Controller                                                   | Description |
-| ------------------------------------------------------------ | ----------- |
-| [xing/kubernetes-deployment-restart-controller](https://github.com/xing/kubernetes-deployment-restart-controller) |             |
-| [mfojtik/k8s-trigger-controller](https://github.com/mfojtik/k8s-trigger-controller) |             |
-| [pusher/wave](https://github.com/pusher/wave)                |             |
-| [stakater/Reloader](https://github.com/stakater/Reloader)    |             |
-| [stakater/Chowkidar](https://github.com/stakater/Chowkidar)  |             |
+| Controller                                                   | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [keel-hq/keel](https://github.com/keel-hq/keel)              | Automate Helm, DaemonSet, StatefulSet & Deployment updates based on image updates |
+| [xing/kubernetes-deployment-restart-controller](https://github.com/xing/kubernetes-deployment-restart-controller) |                                                              |
+| [mfojtik/k8s-trigger-controller](https://github.com/mfojtik/k8s-trigger-controller) |                                                              |
+| [pusher/wave](https://github.com/pusher/wave)                |                                                              |
+| [stakater/Reloader](https://github.com/stakater/Reloader)    |                                                              |
+| [stakater/Chowkidar](https://github.com/stakater/Chowkidar)  |                                                              |
+| [GoogleCloudPlatform/freshpod](https://github.com/GoogleCloudPlatform/freshpod) | Restart Pods on Minikube automatically on image rebuilds     |
 
 ### GitOps
 
-| Controller                                      | Description |
-| ----------------------------------------------- | ----------- |
-| [pusher/faros](https://github.com/pusher/faros) |             |
+| Controller                                              | Description |
+| ------------------------------------------------------- | ----------- |
+| [weavework/flux](https://github.com/weaveworks/flux)    |             |
+| [argoproj/argo-cd](https://github.com/argoproj/argo-cd) |             |
+| [box/kube-applier](https://github.com/box/kube-applier) |             |
+| [hasura/gitkube](https://github.com/hasura/gitkube)     |             |
+| [pusher/faros](https://github.com/pusher/faros)         |             |
 
 
 
