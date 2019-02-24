@@ -68,15 +68,17 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 
 ### Multi-Cluster
 
-| Controller                                                   | Description |
-| ------------------------------------------------------------ | ----------- |
-| [admiraltyio/multicluster-scheduler](https://github.com/admiraltyio/multicluster-scheduler) |             |
-| [oracle/federated-ingress-controller](https://github.com/oracle/federated-ingress-controller) |             |
-| [vmware/k8s-endpoints-sync-controller](https://github.com/vmware/k8s-endpoints-sync-controller) |             |
-| [awslabs/aws-eks-cluster-controller](https://github.com/awslabs/aws-eks-cluster-controller) |             |
-| [gardener/machine-controller-manager](https://github.com/gardener/machine-controller-manager) |             |
-| [pharmer/cloud-controller-manager](https://github.com/pharmer/cloud-controller-manager) |             |
-| [samsung-cnct/cluster-controller](https://github.com/samsung-cnct/cluster-controller) |             |
+| Controller                                                   | Description                                                  |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| [admiraltyio/multicluster-scheduler](https://github.com/admiraltyio/multicluster-scheduler) |                                                              |
+| [oracle/federated-ingress-controller](https://github.com/oracle/federated-ingress-controller) |                                                              |
+| [github/kube-service-exporter](https://github.com/github/kube-service-exporter) | Export load balancer services to consul                      |
+| [hashicorp/consul-k8s](https://github.com/hashicorp/consul-k8s) | Sync Consul services into first-class Kubernetes services and vice versa |
+| [vmware/k8s-endpoints-sync-controller](https://github.com/vmware/k8s-endpoints-sync-controller) |                                                              |
+| [awslabs/aws-eks-cluster-controller](https://github.com/awslabs/aws-eks-cluster-controller) |                                                              |
+| [gardener/machine-controller-manager](https://github.com/gardener/machine-controller-manager) |                                                              |
+| [pharmer/cloud-controller-manager](https://github.com/pharmer/cloud-controller-manager) |                                                              |
+| [samsung-cnct/cluster-controller](https://github.com/samsung-cnct/cluster-controller) |                                                              |
 
 
 
@@ -84,11 +86,11 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 
 | Controller                                                   | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [kubernetes-replicator](https://github.com/mittwald/kubernetes-replicator) | controller for synchronizing secrets & config maps across namespaces |
-| [registry-creds](https://github.com/upmc-enterprises/registry-creds) | Allow for AWS ECR and Google Registry credentials to be refreshed inside your Kubernetes cluster via ImagePullSecrets |
-| [namespace-configuration-controller](https://github.com/raffaelespazzoli/namespace-configuration-controller) | keeps a namespace's configuration aligned with one of more policies specified as a CRD |
+| [mittwald/kubernetes-replicator](https://github.com/mittwald/kubernetes-replicator) | controller for synchronizing secrets & config maps across namespaces |
+| [upmc-enterprises/registry-creds](https://github.com/upmc-enterprises/registry-creds) | Allow for AWS ECR and Google Registry credentials to be refreshed inside your Kubernetes cluster via ImagePullSecrets |
+| [raffaelespazzoli/namespace-configuration-controller](https://github.com/raffaelespazzoli/namespace-configuration-controller) | keeps a namespace's configuration aligned with one of more policies specified as a CRD |
 | [cruise-automation/rbacsync](https://github.com/cruise-automation/rbacsync) |                                                              |
-| [tumblr / k8s-config-projector](https://github.com/tumblr/k8s-config-projector) | Create Kubernetes ConfigMaps from configuration files        |
+| [tumblr/k8s-config-projector](https://github.com/tumblr/k8s-config-projector) | Create Kubernetes ConfigMaps from configuration files        |
 | [stakater/ProxyInjector](https://github.com/stakater/ProxyInjector) | inject an authentication proxy container to relevant pods    |
 
 
@@ -98,16 +100,18 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 
 | Controller                                                   | Description                                              |
 | ------------------------------------------------------------ | -------------------------------------------------------- |
-| [open-policy-agent/kubernetes-policy-controller](https://github.com/open-policy-agent/kubernetes-policy-controller) |                                                          |
-| [replicatedhq/gatekeeper](https://github.com/replicatedhq/gatekeeper) |                                                          |
-| [stefanprodan/kubesec-webhook](https://github.com/stefanprodan/kubesec-webhook) |                                                          |
-| [UKHomeOffice/policy-admission](https://github.com/UKHomeOffice/policy-admission) |                                                          |
-| [lachie83/internallb-webhook-admission-controller](https://github.com/lachie83/internallb-webhook-admission-controller) |                                                          |
-| [jasonrichardsmith/sentry](https://github.com/jasonrichardsmith/sentry) |                                                          |
-| [IBM/portieris](https://github.com/IBM/portieris)            |                                                          |
-| [yahoo/k8s-namespace-guard](https://github.com/yahoo/k8s-namespace-guard) |                                                          |
-| [mikkeloscar/pdb-*controller*](https://github.com/mikkeloscar/pdb-controller) | adds default Pod Disruption Budgets                      |
-| [target/portauthority](https://github.com/target/portauthority) | leverages Clair to scan k8s clusters for vulnerabilities |
+| [open-policy-agent/kubernetes-policy-controller](https://github.com/open-policy-agent/kubernetes-policy-controller) | Open Policy Agent Admission controller                   |
+| [replicatedhq/gatekeeper](https://github.com/replicatedhq/gatekeeper) | Alternative dynamic admission contollers via OPA         |
+| [yahoo/k8s-ingress-claim](https://github.com/yahoo/k8s-ingress-claim) | Safeguards against duplicate claiming of hosts / domains |
+| [jainishshah17/tugger](https://github.com/jainishshah17/tugger) | Enforce pulling docker images from a private registry    |
+| [stefanprodan/kubesec-webhook](https://github.com/stefanprodan/kubesec-webhook) | Enforces minimum kubesec.io scores                       |
+| [UKHomeOffice/policy-admission](https://github.com/UKHomeOffice/policy-admission) | Policy enforcement via standard rules and JavaScript     |
+| [lachie83/internallb-webhook-admission-controller](https://github.com/lachie83/internallb-webhook-admission-controller) | Enforces only internal cloud load balancers              |
+| [jasonrichardsmith/sentry](https://github.com/jasonrichardsmith/sentry) | Policy enforcement for limits, images, health            |
+| [IBM/portieris](https://github.com/IBM/portieris)            | Image trust enforcement with Notary / Content Trust      |
+| [yahoo/k8s-namespace-guard](https://github.com/yahoo/k8s-namespace-guard) | Prevents accidental deletion of namespaces               |
+| [mikkeloscar/pdb-controller](https://github.com/mikkeloscar/pdb-controller) | Adds default Pod Disruption Budgets                      |
+| [target/portauthority](https://github.com/target/portauthority) | Leverages Clair to scan k8s clusters for vulnerabilities |
 
 
 
@@ -115,20 +119,20 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 
 | Controller                                                   | Description                                                  |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| [hxquangnhat/*kubernetes*-auto-ingress](https://github.com/hxquangnhat/kubernetes-auto-ingress) | Dynamically create an ingress for an associated service for *Kubernetes*, works with nginx ingress *controller* |
-| [torchbox/k8s-ts-ingress](https://github.com/torchbox/k8s-ts-ingress) | *Kubernetes* Ingress *controller* as a Traffic Server plugin |
+| [hxquangnhat/kubernetes-auto-ingress](https://github.com/hxquangnhat/kubernetes-auto-ingress) | Dynamically create an ingress for an associated service      |
+| [torchbox/k8s-ts-ingress](https://github.com/torchbox/k8s-ts-ingress) | Traffic Server ingress controller                            |
 | [stakater/Xposer](https://github.com/stakater/Xposer)        | watch for services and dynamically create an Ingress with a TLS certificate |
 | [stakater/IngressMonitorController](https://github.com/stakater/IngressMonitorController) | monitor ingresses and create alerts on Pingdom, UptimeRobot and StatusCake |
+| [uswitch/yggdrasil](https://github.com/uswitch/yggdrasil)    | Envoy control plane for multi-cluster ingress                |
 | [bretagne-peiqi/lvs-nginx-controller](https://github.com/bretagne-peiqi/lvs-nginx-controller) |                                                              |
 | [citrix/citrix-k8s-ingress-controller](https://github.com/citrix/citrix-k8s-ingress-controller) |                                                              |
 |                                                              |                                                              |
 | [wehco/caddy-ingress-controller](https://github.com/wehco/caddy-ingress-controller) |                                                              |
-| [stakater/IngressMonitorController](https://github.com/stakater/IngressMonitorController) |                                                              |
 | [hootsuite/sens8](https://github.com/hootsuite/sens8)        |                                                              |
 | [YakLabs/kube-openresty-ingress](https://github.com/YakLabs/kube-openresty-ingress) |                                                              |
 | [philips/backplane-kubernetes-ingress](https://github.com/philips/backplane-kubernetes-ingress) |                                                              |
 | [mercari/certificate-expiry-monitor-controller](https://github.com/mercari/certificate-expiry-monitor-controller) |                                                              |
-| [nilebox/kanarini](https://github.com/nilebox/kanarini)      |                                                              |
+| [nilebox/kanarini](https://github.com/nilebox/kanarini)      | Canary deployment controller                                 |
 | [webrelay/ingress](https://github.com/webrelay/ingress)      | Map tunnels to ingress for [webhookrelay.com](webhookrelay.com) |
 
 
@@ -139,10 +143,19 @@ See [awesome-operators](https://github.com/operator-framework/awesome-operators)
 
 | Controller                                                   | Description |
 | ------------------------------------------------------------ | ----------- |
-| [xing/*kubernetes*-deployment-restart-*controller*](https://github.com/xing/kubernetes-deployment-restart-controller) |             |
+| [xing/kubernetes-deployment-restart-controller](https://github.com/xing/kubernetes-deployment-restart-controller) |             |
 | [mfojtik/k8s-trigger-controller](https://github.com/mfojtik/k8s-trigger-controller) |             |
+| [pusher/wave](https://github.com/pusher/wave)                |             |
 | [stakater/Reloader](https://github.com/stakater/Reloader)    |             |
 | [stakater/Chowkidar](https://github.com/stakater/Chowkidar)  |             |
+
+### GitOps
+
+| Controller                                      | Description |
+| ----------------------------------------------- | ----------- |
+| [pusher/faros](https://github.com/pusher/faros) |             |
+
+
 
 ### Development Tools
 
